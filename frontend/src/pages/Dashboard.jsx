@@ -16,14 +16,12 @@ function Dashboard() {
   const userId = localStorage.getItem("userId");
   const isGuest = userId === "guest";
 
-  // 🔹 Ensure the user stays logged in
+ 
   useEffect(() => {
     if (!token) {
-      setTimeout(() => {
-        navigate("/", { replace: true });
-      }, 100);
+      navigate("/", { replace: true }); 
     } else {
-      axios.get(`http://localhost:5000/auth/user/${userId}`, {
+      axios.get(`https://event-management-app-bj5y.onrender.com/auth/user/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUserName(res.data.name))
@@ -31,39 +29,31 @@ function Dashboard() {
     }
   }, [navigate, token, userId]);
 
-  // 🔹 Fetch events based on filters
-  const fetchEvents = async () => {
-    try {
-      const params = { category, filterType };
-
-      // ✅ Only apply date filter if "upcoming" events are selected
-      if (filterType === "upcoming" && dateFilter) {
-        params.dateFilter = dateFilter;
-      }
-
-      const res = await axios.get("http://localhost:5000/events", { params });
-      setEvents(res.data);
-    } catch (error) {
-      console.error("Error fetching events:", error);
-    }
-  };
 
   useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const params = { category, filterType };
+        if (filterType === "upcoming" && dateFilter) {
+          params.dateFilter = dateFilter;
+        }
+        const res = await axios.get("https://event-management-app-bj5y.onrender.com/events", { params });
+        setEvents(res.data);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      }
+    };
+
     fetchEvents();
   }, [category, dateFilter, filterType]);
 
-  // 🔹 Logout function (prevents navigation throttling)
+
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userId");
-
     setTimeout(() => {
-      
-      setTimeout(() => {
-        
-        window.location.href = "/";
-      }, 1000); // ✅ Prevents throttling
-    }, 100);
+      window.location.href = "/"
+    }, 100); 
   };
 
   return (
@@ -78,7 +68,7 @@ function Dashboard() {
               onClick={() => setShowMenu(!showMenu)}
               className="px-4 py-2 bg-[#7886C7] text-white rounded-lg hover:bg-[#A9B5DF] transition"
             >
-              {userName}
+              Profile
             </button>
 
             {showMenu && (
@@ -119,12 +109,12 @@ function Dashboard() {
             <option value="sports">Sports</option>
           </select>
 
-          {/* 🔹 Date Filter (Corrected Logic) */}
+          {/* 🔹 Date Filter (Fixed) */}
           <select 
             className="p-2 border rounded bg-[#2D336B]" 
             value={dateFilter} 
             onChange={(e) => setDateFilter(e.target.value)}
-            disabled={filterType === "past"} // 🔹 Disable for past events
+            disabled={filterType === "past"} 
           >
             <option value="">All Dates</option>
             <option value="today">Today</option>

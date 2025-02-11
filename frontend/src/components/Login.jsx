@@ -25,7 +25,7 @@ function Login() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/auth/login", { email, password });
+      const res = await axios.post("https://event-management-app-bj5y.onrender.com/auth/login", { email, password });
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("userId", res.data.userId);
@@ -46,7 +46,7 @@ function Login() {
   const handleGuestLogin = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/auth/guest-login");
+      const res = await axios.post("https://event-management-app-bj5y.onrender.com/auth/guest-login");
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("userId", "guest");

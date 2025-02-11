@@ -3,7 +3,7 @@ import axios from "axios";
 import io from "socket.io-client";
 import moment from "moment"; 
 
-const socket = io("http://localhost:5000");
+const socket = io("https://event-management-app-bj5y.onrender.com");
 
 function EventList({ events, setEvents }) { 
   const [editingEvent, setEditingEvent] = useState(null);
@@ -16,7 +16,7 @@ function EventList({ events, setEvents }) {
   const token = localStorage.getItem("token");
   const userId = localStorage.getItem("userId");
 
-  console.log("Logged-in User ID:", userId);
+  // console.log("Logged-in User ID:", userId);
 
   useEffect(() => {
     const handleNewEvent = (newEvent) => {
@@ -64,7 +64,7 @@ function EventList({ events, setEvents }) {
   const handleJoinEvent = async (id) => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/events/join/${id}`,
+        `https://event-management-app-bj5y.onrender.com/events/join/${id}`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -79,7 +79,7 @@ function EventList({ events, setEvents }) {
 
   const handleDeleteEvent = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/events/${id}`, {
+      await axios.delete(`https://event-management-app-bj5y.onrender.com/events/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
     } catch (error) {
@@ -100,7 +100,7 @@ function EventList({ events, setEvents }) {
   const handleUpdateEvent = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/events/${editingEvent._id}`,
+        `https://event-management-app-bj5y.onrender.com/events/${editingEvent._id}`,
         {
           name: updatedName,
           description: updatedDescription,
@@ -122,7 +122,7 @@ function EventList({ events, setEvents }) {
 
   return (
     <div>
-      <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+      <h2 className="text-3xl text-white font-semibold text-gray-800 mb-6">
         Upcoming Events
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

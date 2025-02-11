@@ -23,7 +23,7 @@ function CreateEvent() {
   const handleCreateEvent = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/events/create",
+        "https://event-management-app-bj5y.onrender.com/events/create",
         { name, description, date, time, location, category }, 
         { headers: { Authorization: `Bearer ${token}` } }
       );

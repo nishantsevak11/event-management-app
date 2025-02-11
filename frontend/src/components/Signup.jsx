@@ -19,12 +19,14 @@ function Signup() {
   //  Handle Signup and Auto-Login
   const handleSignup = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/signup", { name, email, password });
+      const res = await axios.post("https://event-management-app-bj5y.onrender.com/auth/signup", { name, email, password });
 
   
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("userId", res.data.userId);
-      navigate("/dashboard");
+      setTimeout(() => {
+        window.location.href = "/dashboard";
+      }, 1000);
     } catch (error) {
       alert("Signup failed. Try again.");
     }
