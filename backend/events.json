@@ -1,0 +1,156 @@
+[
+    {
+      "name": "Past Tech Meetup",
+      "description": "A past technology event for AI and ML.",
+      "date": "2024-01-15T10:00:00.000Z",
+      "time": "10:00 AM",
+      "location": "San Francisco, CA",
+      "category": "tech",
+      "attendees": 50
+    },
+    {
+      "name": "Sports Championship 2023",
+      "description": "Final match of last year's league.",
+      "date": "2024-01-20T06:00:00.000Z",
+      "time": "6:00 AM",
+      "location": "Berlin, Germany",
+      "category": "sports",
+      "attendees": 5000
+    },
+    {
+      "name": "Startup Pitch Event",
+      "description": "Investors meet startup founders today.",
+      "date": "2024-06-05T16:00:00.000Z",
+      "time": "4:00 PM",
+      "location": "Silicon Valley, CA",
+      "category": "business",
+      "attendees": 100
+    },
+    {
+      "name": "AI & Blockchain Panel",
+      "description": "Discussion on AI-powered blockchain solutions.",
+      "date": "2024-06-05T17:30:00.000Z",
+      "time": "5:30 PM",
+      "location": "London, UK",
+      "category": "tech",
+      "attendees": 80
+    },
+    {
+      "name": "Tech Career Fair",
+      "description": "Companies hiring for software engineers.",
+      "date": "2024-06-08T11:00:00.000Z",
+      "time": "11:00 AM",
+      "location": "Chicago, IL",
+      "category": "tech",
+      "attendees": 300
+    },
+    {
+      "name": "Music Awards Ceremony",
+      "description": "Annual global music awards event.",
+      "date": "2024-06-10T20:00:00.000Z",
+      "time": "8:00 PM",
+      "location": "Los Angeles, CA",
+      "category": "music",
+      "attendees": 5000
+    },
+    {
+      "name": "Community Charity Run",
+      "description": "5K run to support local charities.",
+      "date": "2024-06-15T07:00:00.000Z",
+      "time": "7:00 AM",
+      "location": "Toronto, Canada",
+      "category": "sports",
+      "attendees": 2000
+    },
+    {
+      "name": "Blockchain & Crypto Summit",
+      "description": "Global summit on blockchain and DeFi.",
+      "date": "2024-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "location": "Singapore",
+      "category": "tech",
+      "attendees": 400
+    },
+    {
+      "name": "Gaming Expo 2024",
+      "description": "New game releases and eSports tournaments.",
+      "date": "2024-07-05T12:00:00.000Z",
+      "time": "12:00 PM",
+      "location": "Tokyo, Japan",
+      "category": "entertainment",
+      "attendees": 2000
+    },
+    {
+      "name": "Marathon Championship",
+      "description": "Annual long-distance running championship.",
+      "date": "2024-07-18T06:00:00.000Z",
+      "time": "6:00 AM",
+      "location": "Berlin, Germany",
+      "category": "sports",
+      "attendees": 5000
+    },
+    {
+      "name": "World Film Festival",
+      "description": "Showcasing independent films from around the world.",
+      "date": "2024-07-30T18:30:00.000Z",
+      "time": "6:30 PM",
+      "location": "Paris, France",
+      "category": "entertainment",
+      "attendees": 500
+    },
+    {
+      "name": "Tech Conference 2024",
+      "description": "The biggest AI and Blockchain conference of the year.",
+      "date": "2024-08-10T09:00:00.000Z",
+      "time": "9:00 AM",
+      "location": "New York, USA",
+      "category": "tech",
+      "attendees": 250
+    },
+    {
+      "name": "World Business Summit",
+      "description": "Global networking event for entrepreneurs.",
+      "date": "2024-08-20T15:00:00.000Z",
+      "time": "3:00 PM",
+      "location": "San Francisco, CA",
+      "category": "business",
+      "attendees": 200
+    },
+    {
+      "name": "International Music Festival",
+      "description": "Music festival featuring artists from all over the world.",
+      "date": "2024-09-05T18:00:00.000Z",
+      "time": "6:00 PM",
+      "location": "Los Angeles, CA",
+      "category": "music",
+      "attendees": 6000
+    },
+    {
+      "name": "Space Technology Expo",
+      "description": "Latest developments in space exploration and technology.",
+      "date": "2024-09-20T09:00:00.000Z",
+      "time": "9:00 AM",
+      "location": "Dubai, UAE",
+      "category": "tech",
+      "attendees": 800
+    },
+    {
+      "name": "Year-End Tech Summit",
+      "description": "End of year AI & Blockchain summit.",
+      "date": "2024-12-10T10:00:00.000Z",
+      "time": "10:00 AM",
+      "location": "San Francisco, CA",
+      "category": "tech",
+      "attendees": 500
+    },
+    {
+      "name": "New Year Celebration 2025",
+      "description": "Start the new year with a grand celebration!",
+      "date": "2025-01-01T00:00:00.000Z",
+      "time": "12:00 AM",
+      "location": "Sydney, Australia",
+      "category": "entertainment",
+      "attendees": 10000
+    }
+  ]
+  
