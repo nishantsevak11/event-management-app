@@ -32,7 +32,7 @@ Users can **create, edit, delete, and join events** with real-time updates and f
 -  **JWT Authentication** (Secure Login)
 
 ### **Deployment**
--  **Frontend** → [Vercel]([https://vercel.com/](https://event-management-app-mauve.vercel.app/))  
+-  **Frontend** → [https://event-management-app-mauve.vercel.app/]
 -  **Database** → MongoDB Atlas  
 
 ---
